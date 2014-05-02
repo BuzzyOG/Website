@@ -5,8 +5,8 @@
 	  	echo 'Servers index!';
 	  }
 	  
-	  public function viewServer($serverName) {
-	    echo 'This is a specific server!';
+	  public function viewServer($serverId) {
+	    echo 'The specified id is ' . $serverId;
 	  }
   }
 ?>
