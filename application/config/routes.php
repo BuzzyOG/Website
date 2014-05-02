@@ -40,8 +40,8 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
-$route['servers'] = 'Servers';
-$route['servers/(:any)'] = 'Servers/viewServer/$1';
+$route['servers'] = "Servers";
+$route['servers/(:any)'] = "Servers/viewServer/$1";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
