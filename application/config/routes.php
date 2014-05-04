@@ -40,6 +40,9 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
+$route['moderation'] = "Moderation/Moderation";
+$route['moderation/players'] = "Moderation/Moderation/viewPlayers";
+$route['moderation/logs'] = "Moderation/Moderation/viewLogs";
 $route['servers'] = "Servers/Servers";
 $route['servers/(:any)'] = "Servers/Servers/viewServer/$1";
 
