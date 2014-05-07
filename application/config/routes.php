@@ -38,11 +38,13 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "Index";
 $route['404_override'] = '';
 $route['moderation'] = "Moderation/Moderation";
 $route['moderation/players'] = "Moderation/Moderation/viewPlayers";
 $route['moderation/logs'] = "Moderation/Moderation/viewLogs";
+$route['games'] = "Games/Games";
+$route['games/(:any)'] = "Games/Games/viewGame/$1";
 $route['servers'] = "Servers/Servers";
 $route['servers/(:any)'] = "Servers/Servers/viewServer/$1";
 
