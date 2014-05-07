@@ -47,6 +47,8 @@ $route['games'] = "Games/Games";
 $route['games/(:any)'] = "Games/Games/viewGame/$1";
 $route['servers'] = "Servers/Servers";
 $route['servers/(:any)'] = "Servers/Servers/viewServer/$1";
+$route['players'] = "Players/Players";
+$route['players/(:any).(:num)'] = "Players/Players/viewPlayer/$2";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
