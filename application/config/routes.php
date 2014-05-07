@@ -42,13 +42,17 @@ $route['default_controller'] = "Index";
 $route['404_override'] = '';
 $route['moderation'] = "Moderation/Moderation";
 $route['moderation/players'] = "Moderation/Moderation/viewPlayers";
+$route['moderation/reports'] = "Moderation/Moderation/viewReports";
 $route['moderation/logs'] = "Moderation/Moderation/viewLogs";
 $route['games'] = "Games/Games";
 $route['games/(:any)'] = "Games/Games/viewGame/$1";
+$route['game/(:any)'] = "Games/Games/viewGame/$1";
 $route['servers'] = "Servers/Servers";
 $route['servers/(:any)'] = "Servers/Servers/viewServer/$1";
+$route['server/(:any)'] = "Servers/Servers/viewServer/$1";
 $route['players'] = "Players/Players";
 $route['players/(:any).(:num)'] = "Players/Players/viewPlayer/$2";
+$route['player/(:any).(:num)'] = "Players/Players/viewPlayer/$2";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
