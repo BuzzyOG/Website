@@ -38,21 +38,36 @@
 |
 */
 
-$route['default_controller'] = "Index";
+//Default routes
+$route['default_controller'] = "welcome";
 $route['404_override'] = '';
-$route['moderation'] = "Moderation/Moderation";
-$route['moderation/players'] = "Moderation/Moderation/viewPlayers";
-$route['moderation/reports'] = "Moderation/Moderation/viewReports";
-$route['moderation/logs'] = "Moderation/Moderation/viewLogs";
-$route['games'] = "Games/Games";
-$route['games/(:any)'] = "Games/Games/viewGame/$1";
-$route['game/(:any)'] = "Games/Games/viewGame/$1";
-$route['servers'] = "Servers/Servers";
-$route['servers/(:any)'] = "Servers/Servers/viewServer/$1";
-$route['server/(:any)'] = "Servers/Servers/viewServer/$1";
+
+//Admin routes
+$route['admin'] = "Admin/Admin";
+$route['admin/options'] = "Admin/Admin/options";
+
+//Moderation routes
+$route['mod'] = "Moderation/Moderation";
+$route['mod/players'] = "Moderation/Moderation/viewPlayers";
+$route['mod/reports'] = "Moderation/Moderation/viewReports";
+$route['mod/logs'] = "Moderation/Moderation/viewLogs";
+
+//Player routes
 $route['players'] = "Players/Players";
 $route['players/(:any).(:num)'] = "Players/Players/viewPlayer/$2";
 $route['player/(:any).(:num)'] = "Players/Players/viewPlayer/$2";
+
+//Wiki routes
+$route['wiki'] = "Wiki/Wiki/index";
+$route['wiki/(:any)'] = "Wiki/Wiki/wiki/$1";
+
+//Standard games Routes
+$route['games'] = "Games/Games/index";
+$route['games/(:any)'] = "Games/Game/index/$1";
+
+//Direct games routes
+$route['kingdoms'] = "Games/Game/index/kingdoms";
+$route['cz'] = "Games/Game/index/cz";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
