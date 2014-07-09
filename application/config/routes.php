@@ -42,30 +42,30 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
-//Admin routes
+//Admin routes - no controllers
 $route['admin'] = "Admin/Admin";
 $route['admin/options'] = "Admin/Admin/options";
 
-//Moderation routes
+//Moderation routes - no controllers
 $route['mod'] = "Moderation/Moderation";
 $route['mod/players'] = "Moderation/Moderation/viewPlayers";
 $route['mod/reports'] = "Moderation/Moderation/viewReports";
 $route['mod/logs'] = "Moderation/Moderation/viewLogs";
 
-//Player routes
+//Player routes - controllers
 $route['players'] = "Players/Players";
 $route['players/(:any).(:num)'] = "Players/Players/viewPlayer/$2";
 $route['player/(:any).(:num)'] = "Players/Players/viewPlayer/$2";
 
-//Wiki routes
+//Wiki routes - no controllers
 $route['wiki'] = "Wiki/Wiki/index";
 $route['wiki/(:any)'] = "Wiki/Wiki/wiki/$1";
 
-//Standard games Routes
-$route['games'] = "Games/Games/index";
+//Standard games routes - no controllers
+$route['games'] = "Games/Games";
 $route['games/(:any)'] = "Games/Game/index/$1";
 
-//Direct games routes
+//Direct games routes - no controllers
 $route['kingdoms'] = "Games/Game/index/kingdoms";
 $route['cz'] = "Games/Game/index/cz";
 
