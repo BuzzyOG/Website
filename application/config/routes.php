@@ -61,11 +61,11 @@ $route['player/(:any).(:num)'] = "Players/Players/viewPlayer/$2";
 $route['wiki'] = "Wiki/Wiki/index";
 $route['wiki/(:any)'] = "Wiki/Wiki/wiki/$1";
 
-//Standard games routes - no controllers
+//Standard games routes - controllers
 $route['games'] = "Games/Games";
 $route['games/(:any)'] = "Games/Game/index/$1";
 
-//Direct games routes - no controllers
+//Direct games routes - controllers
 $route['kingdoms'] = "Games/Game/index/kingdoms";
 $route['cz'] = "Games/Game/index/cz";
 
