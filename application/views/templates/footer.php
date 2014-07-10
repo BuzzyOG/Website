@@ -1,5 +1,5 @@
-			<div class="footer">
-		    	<p class="text-muted"><?php $options['footer_content']; ?> Render Time: {elapsed_time}</p>
+			<div class="panel-footer">
+		    	<p class="text-muted"><?php echo $options['footer_content']; ?> Render Time: {elapsed_time}</p>
 		    </div>
 		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
