@@ -23,6 +23,7 @@ class Welcome extends CI_Controller {
 		$options['footer_content'] = 'This is the QuartzCraft footer content.';
 		$data['title'] = 'Welcome!';
 		$data['options'] = $options;
+		
 		$this->load->view('main', $data);
 	}
 }
