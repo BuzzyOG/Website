@@ -44,13 +44,12 @@ $route['404_override'] = '';
 
 //Admin routes - no controllers
 $route['admin'] = "Admin/Admin";
-$route['admin/options'] = "Admin/Admin/options";
 
 //Moderation routes - no controllers
 $route['mod'] = "Moderation/Moderation";
-$route['mod/players'] = "Moderation/Moderation/viewPlayers";
-$route['mod/reports'] = "Moderation/Moderation/viewReports";
-$route['mod/logs'] = "Moderation/Moderation/viewLogs";
+$route['mod/players'] = "Moderation/Moderation/viewPlayers"; //Can remove
+$route['mod/reports'] = "Moderation/Moderation/viewReports"; //Can remove
+$route['mod/logs'] = "Moderation/Moderation/viewLogs"; //Can remove
 
 //Player routes - controllers
 $route['players'] = "Players/Players";
