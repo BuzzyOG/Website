@@ -19,7 +19,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$options['website_title'] = 'QuartzCraft';
+		$options['footer_content'] = 'This is the QuartzCraft footer content.';
+		$data['title'] = 'Welcome!';
+		$data['options'] = $options;
+		$this->load->view('main', $data);
 	}
 }
 
