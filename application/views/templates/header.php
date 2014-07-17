@@ -1,3 +1,6 @@
+<?php
+$this->load->helper('url');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,10 +37,20 @@
 						<li><a href="#">Separated link</a></li>
 					</ul>
 				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+				 		<li><a href="#">Moderation Panel</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Staff Forums</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Site Admin</a></li>
+						<li><a href="#">XenForo Admin</a></li>
+					</ul>
+				</li>
 			</ul>
 			<!--
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Link</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Username <b class="caret"></b></a>
 					<ul class="dropdown-menu">
@@ -64,7 +77,7 @@
 		      <span class="icon-bar"></span>
 		      <span class="icon-bar"></span>
 		    </button>
-		    <a class="navbar-brand" href="#"><?php echo $options['website_title'] ?></a>
+		    <a class="navbar-brand" href="<?php echo base_url(); ?>"><?php echo $options['website_title'] ?></a>
 		  </div>
 		  <div class="navbar-collapse collapse navbar-responsive-collapse">
 		    <ul class="nav navbar-nav">
