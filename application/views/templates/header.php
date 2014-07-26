@@ -23,32 +23,39 @@ $this->load->helper('url');
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">	
-		 	<div sytle="float:left">
-		 		<a class="navbar-brand" href="#">News Item</a>
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				    <span class="icon-bar"></span>
+			  		<span class="icon-bar"></span>
+		   	   		<span class="icon-bar"></span>
+				</button>
+		 	   	<a class="navbar-brand" href="#">News Item</a>
 			</div>
-			<ul class="nav navbar-nav" style="float:right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Username <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-			    		<li><a href="#">Action</a></li>
-			    		<li><a href="#">Another action</a></li>
-			    		<li><a href="#">Something else here</a></li>
-			    		<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-				 		<li><a href="#">Moderation Panel</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Staff Forums</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Site Admin</a></li>
-						<li><a href="#">XenForo Admin</a></li>
-					</ul>
-				</li>
-			</ul>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav" style="float:right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Username <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+				    		<li><a href="#">Action</a></li>
+				    		<li><a href="#">Another action</a></li>
+				    		<li><a href="#">Something else here</a></li>
+				    		<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+					 		<li><a href="#">Moderation Panel</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Staff Forums</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Site Admin</a></li>
+							<li><a href="#">XenForo Admin</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 			<!--
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
