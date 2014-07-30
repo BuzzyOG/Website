@@ -1,6 +1,6 @@
 <?php include_once('templates/header.php'); ?>
-
-      <div class="page-header">
+	
+    <div class="page-header">
         <h1>Page header <small>With small content</small></h1>
       </div>
       <p class="lead">Lead content</p>

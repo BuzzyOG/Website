@@ -1,4 +1,5 @@
 <?php
+include_once('carousel.php');
 $this->load->helper('url');
 ?>
 <!DOCTYPE html>
@@ -20,7 +21,6 @@ $this->load->helper('url');
     <![endif]-->
   </head>
   <body>
-
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">	
 			<div class="navbar-header">
@@ -73,9 +73,13 @@ $this->load->helper('url');
 		</div>
 	</div>
 	
-	<div class="container" style="padding-top:60px">
+	<?php if($displayCarousel) {
+				echo displayCarousel();
+			} else {
+				echo 'Logo goes here';
+			}
+	?>
 	
-	<p>Logo goes here</p>	
 	
 	<div class="navbar navbar-default">
 		  <div class="navbar-header">
