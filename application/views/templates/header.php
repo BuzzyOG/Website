@@ -80,6 +80,7 @@ $this->load->helper('url');
 			}
 	?>
 	
+	<div class="container" style="padding-top:60px; background: white;">
 	
 	<div class="navbar navbar-default">
 		  <div class="navbar-header">
