@@ -66,7 +66,6 @@ $route['games/(:any)'] = "Games/Game/index/$1";
 
 //Direct games routes - controllers
 $route['kingdoms'] = "Games/Game/index/kingdoms";
-$route['cz'] = "Games/Game/index/cz";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
